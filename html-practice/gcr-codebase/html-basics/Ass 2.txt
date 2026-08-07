@@ -1,0 +1,625 @@
+1. Create a basic webpage titled “My First Web Page”.
+Inside the <body>, display your full name as a main heading (<h1>) and write a short
+introduction paragraph about yourself.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+
+    <h2>Question 1</h2>
+
+    <p>
+        <b>
+            Create a basic webpage titled "My First Web Page".
+            Inside the &lt;body&gt;, display your full name as a main heading
+            (&lt;h1&gt;) and write a short introduction paragraph about yourself.
+        </b>
+    </p>
+
+    <h1>Mohit Chahar</h1>
+
+    <p>
+        Hello! My name is Mohit Chahar. I am a B.Tech CSE student.
+        I enjoy learning programming, web development, and cybersecurity.
+    </p>
+
+</body>
+</html>
+
+2. Add a hyperlink (<a>) to Google with suitable link text.
+Make sure the link opens in a new tab.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Link</title>
+</head>
+<body>
+
+    <h2>Question 2</h2>
+
+    <p>
+        <b>
+            Add a hyperlink (&lt;a&gt;) to Google with suitable link text.
+            Make sure the link opens in a new tab.
+        </b>
+    </p>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+</body>
+</html>
+
+3. Insert an image (<img>) of your favorite cartoon or animated character.
+Include an alt attribute that clearly describes the image.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Example</title>
+</head>
+<body>
+
+    <h2>Question 3</h2>
+
+    <p>
+        <b>
+            Insert an image (&lt;img&gt;) of your favorite cartoon or animated character.
+            Include an alt attribute that clearly describes the image.
+        </b>
+    </p>
+
+    <img src="doraemon.jpg"
+         alt="Doraemon Cartoon Character"
+         width="250">
+
+</body>
+</html>
+
+4. Write a paragraph describing your favorite hobby.
+Use <strong> to make one important word bold and <em> to make another italic.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hobby Paragraph</title>
+</head>
+<body>
+
+    <h2>Question 4</h2>
+
+    <p>
+        <b>
+            Write a paragraph describing your favorite hobby.
+            Use &lt;strong&gt; to make one important word bold and
+            &lt;em&gt; to make another italic.
+        </b>
+    </p>
+
+    <p>
+        My favorite hobby is <strong>Running</strong>.
+        It keeps me <em>healthy</em> and active every day.
+    </p>
+
+</body>
+</html>
+
+5. Create a paragraph with two sentences, but separate them using a line break (<br>) tag.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Break Example</title>
+</head>
+<body>
+
+    <h2>Question 5</h2>
+
+    <p>
+        <b>
+            Create a paragraph with two sentences, but separate them using
+            a line break (&lt;br&gt;) tag.
+        </b>
+    </p>
+
+    <p>
+        I love learning HTML and CSS.<br>
+        I want to become a successful web developer.
+    </p>
+
+</body>
+</html>
+
+6. Use the <blockquote> tag to display a meaningful quote and mention the author’s name
+using <cite>.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockquote Example</title>
+</head>
+<body>
+
+    <h2>Question 6</h2>
+
+    <p>
+        <b>
+            Use the &lt;blockquote&gt; tag to display a meaningful quote and
+            mention the author's name using &lt;cite&gt;.
+        </b>
+    </p>
+
+    <blockquote>
+        "Success is the sum of small efforts, repeated day in and day out."
+    </blockquote>
+
+    <cite>– Robert Collier</cite>
+
+</body>
+</html>
+
+7. Demonstrate different heading levels by adding:
+● <h1> for your name,
+● <h2> for your role (student/profession),
+● <h3> for your hobbies or interests.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heading Levels</title>
+</head>
+<body>
+
+    <h2>Question 7</h2>
+
+    <p>
+        <b>
+            Demonstrate different heading levels by adding:
+            &lt;h1&gt; for your name,
+            &lt;h2&gt; for your role (student/profession),
+            and &lt;h3&gt; for your hobbies or interests.
+        </b>
+    </p>
+
+    <h1>Mohit Chahar</h1>
+    <h2>B.Tech CSE Student</h2>
+    <h3>Running, Coding, Cybersecurity</h3>
+
+</body>
+</html>
+
+8. Write a paragraph containing:
+● A highlighted word using <mark>
+● A small note at the end using <small> (e.g., “Updated recently”).
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark and Small Example</title>
+</head>
+<body>
+
+    <h2>Question 8</h2>
+
+    <p>
+        <b>
+            Write a paragraph containing:
+            <br>● A highlighted word using &lt;mark&gt;
+            <br>● A small note at the end using &lt;small&gt; (e.g., "Updated recently").
+        </b>
+    </p>
+
+    <p>
+        I am learning <mark>HTML</mark> every day.
+        <small>Updated recently.</small>
+    </p>
+
+</body>
+</html>
+
+9. Create a paragraph that uses both <strong> and <em> to emphasize different parts of a
+sentence.
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Strong and Em Example</title>
+</head>
+<body>
+
+    <h2>Question 9</h2>
+
+    <p>
+        <b>
+            Create a paragraph that uses both &lt;strong&gt; and &lt;em&gt;
+            to emphasize different parts of a sentence.
+        </b>
+    </p>
+
+    <p>
+        <strong>Practice</strong> every day to become
+        <em>successful</em> in life.
+    </p>
+
+</body>
+</html>
+
+10. Display a line of inline code inside a paragraph using the <code> tag.
+Example: show how to print “Hello World” in JavaScript.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Tag Example</title>
+</head>
+<body>
+
+    <h2>Question 10</h2>
+
+    <p>
+        <b>
+            Display a line of inline code inside a paragraph using the
+            &lt;code&gt; tag. Example: show how to print
+            "Hello World" in JavaScript.
+        </b>
+    </p>
+
+    <p>
+        JavaScript Example:
+        <code>console.log("Hello World");</code>
+    </p>
+
+</body>
+</html>
+
+11. Write a paragraph that contains three <span> elements — use them to highlight or label
+different parts of the text (you can imagine colors or meanings).
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Span Tag Example</title>
+</head>
+<body>
+
+    <h2>Question 11</h2>
+
+    <p>
+        <b>
+            Write a paragraph that contains three &lt;span&gt; elements
+            to highlight or label different parts of the text.
+        </b>
+    </p>
+
+    <p>
+        <span>HTML</span>,
+        <span>CSS</span>, and
+        <span>JavaScript</span> are used for web development.
+    </p>
+
+</body>
+</html>
+
+
+12. Create a creative paragraph combining multiple inline elements (<strong>, <em>,
+<mark>, <small>, <br>) to demonstrate inline formatting.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Formatting Example</title>
+</head>
+<body>
+
+    <h2>Question 12</h2>
+
+    <p>
+        <b>
+            Create a creative paragraph combining multiple inline elements
+            (&lt;strong&gt;, &lt;em&gt;, &lt;mark&gt;, &lt;code&gt;, &lt;span&gt;)
+            to demonstrate inline formatting.
+        </b>
+    </p>
+
+    <p>
+        I enjoy <strong>coding</strong>,
+        <em>learning</em>,
+        studying <mark>HTML</mark>,
+        writing <code>console.log("Hello World");</code>,
+        and creating <span>creative websites</span>.
+    </p>
+
+</body>
+</html>
+
+
+13. Build a small webpage with a <header> section that displays your website name or title
+using an <h1> tag.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Header Example</title>
+</head>
+<body>
+
+    <h2>Question 13</h2>
+
+    <p>
+        <b>
+            Build a small webpage with a &lt;header&gt; section that displays
+            your website name or title using an &lt;h1&gt; tag.
+        </b>
+    </p>
+
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+
+</body>
+</html>
+
+14. Just below the header, create a <nav> section containing three links — Home, About, and
+Contact.
+Links can use # as placeholders.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Example</title>
+</head>
+<body>
+
+    <h2>Question 14</h2>
+
+    <p>
+        <b>
+            Just below the header, create a &lt;nav&gt; section containing
+            three links — Home, About, and Contact.
+            Links can use # as placeholders.
+        </b>
+    </p>
+
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+</body>
+</html>
+
+
+15. Create a <main> section containing one short paragraph introducing who you are and what
+the page is about.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Section Example</title>
+</head>
+<body>
+
+    <h2>Question 15</h2>
+
+    <p>
+        <b>
+            Create a &lt;main&gt; section containing one short paragraph
+            introducing who you are and what the page is about.
+        </b>
+    </p>
+
+    <main>
+        <p>
+            Hello! My name is Mohit Chahar. I am a B.Tech CSE student.
+            This page is about me and my interest in web development.
+        </p>
+    </main>
+
+</body>
+</html>
+
+16. Inside <main>, create a <section> titled About Me, with one descriptive paragraph.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Section Example</title>
+</head>
+<body>
+
+    <h2>Question 16</h2>
+
+    <p>
+        <b>
+            Inside &lt;main&gt;, create a &lt;section&gt; titled
+            "About Me", with one descriptive paragraph.
+        </b>
+    </p>
+
+    <main>
+
+        <section>
+            <h2>About Me</h2>
+
+            <p>
+                I am a Computer Science Engineering student.
+                I enjoy programming, web development, and cybersecurity.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+
+17. Still inside <main>, add an <article> with a heading “My First Blog” and a short
+blog-style paragraph.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Example</title>
+</head>
+<body>
+
+    <h2>Question 17</h2>
+
+    <p>
+        <b>
+            Still inside &lt;main&gt;, add an &lt;article&gt;
+            with a heading "My First Blog" and a short blog-style paragraph.
+        </b>
+    </p>
+
+    <main>
+
+        <article>
+
+            <h2>My First Blog</h2>
+
+            <p>
+                Today I created my first HTML webpage.
+                It was a great learning experience and I enjoyed it.
+            </p>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
+
+
+18. Add an <aside> element titled “Useful Links”.
+Inside it, include one or two hyperlinks (for example, your portfolio or favorite websites).
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Example</title>
+</head>
+<body>
+
+    <h2>Question 17</h2>
+
+    <p>
+        <b>
+            Still inside &lt;main&gt;, add an &lt;article&gt;
+            with a heading "My First Blog" and a short blog-style paragraph.
+        </b>
+    </p>
+
+    <main>
+
+        <article>
+
+            <h2>My First Blog</h2>
+
+            <p>
+                Today I created my first HTML webpage.
+                It was a great learning experience and I enjoyed it.
+            </p>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
+
+
+19. At the bottom of the page, create a <footer> that includes copyright information (e.g., ©
+2025.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Footer Example</title>
+</head>
+<body>
+
+    <h2>Question 19</h2>
+
+    <p>
+        <b>
+            At the bottom of the page, create a &lt;footer&gt;
+            that includes copyright information
+            (e.g., © 2025 [Your Name]).
+        </b>
+    </p>
+
+    <footer>
+        <p>&copy; 2025 Mohit Chahar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+20. Combine all the above structure into one complete webpage — use <header>, <nav>,
+<main>, <section>, <article>, <aside>, and <footer>.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+
+    <h2>Question 20</h2>
+
+    <p>
+        <b>
+            Combine all the above structure into one complete webpage —
+            use &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+            &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, and
+            &lt;footer&gt;.
+        </b>
+    </p>
+
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! My name is Mohit Chahar. I am a B.Tech CSE student.</p>
+        </section>
+
+        <article>
+            <h2>My First Blog</h2>
+            <p>
+                Today I created my first HTML webpage and learned basic HTML tags.
+            </p>
+        </article>
+
+        <aside>
+            <h2>Useful Links</h2>
+            <a href="https://www.google.com" target="_blank">Google</a><br>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mohit Chahar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
