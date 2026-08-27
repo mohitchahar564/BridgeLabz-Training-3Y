@@ -1,0 +1,123 @@
+/* Q3: Team Members Layout */
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #172033;
+}
+
+/* Main section */
+.team-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+/* Main heading */
+.team-section > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+/* Three cards in one row */
+.team-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Individual card */
+.team-card {
+    flex: 1;
+
+    /* Box Model */
+    margin: 10px;
+    padding: 30px;
+
+    /* Border */
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+
+    /* Shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    background-color: white;
+
+    text-align: center;
+}
+
+/* Profile circle */
+.profile-image {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #dbeafe;
+    color: #172033;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Name */
+.team-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+/* Role */
+.team-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.team-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Highlight Team Lead card */
+.team-lead {
+    background-color: #dbeafe;
+
+    border: 3px solid #2563eb;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+/* Different profile style for Team Lead */
+.team-lead .profile-image {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Responsive: single column below 600px */
+@media (max-width: 599px) {
+
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

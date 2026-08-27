@@ -1,0 +1,187 @@
+/* Q5: Pricing Table */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #172033;
+}
+
+/* Main section */
+.pricing-section {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 60px auto;
+}
+
+/* Main heading */
+.pricing-section > h1 {
+    text-align: center;
+
+    font-size: 2.7rem;
+    font-weight: 800;
+
+    margin-bottom: 45px;
+}
+
+/* Three equal columns */
+.pricing-container {
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+/* Individual pricing plan */
+.plan {
+    flex: 1;
+
+    /* Equal height */
+    min-height: 480px;
+
+    padding: 35px 30px;
+    margin: 10px;
+
+    background-color: white;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    /* Smooth hover animation */
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.plan:hover {
+    transform: scale(1.05);
+
+    background-color: #eff6ff;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Plan heading */
+.plan h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+    font-size: 2.3rem;
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+/* Feature list */
+.plan ul {
+    list-style: none;
+
+    min-height: 150px;
+
+    margin-bottom: 25px;
+}
+
+.plan li {
+    padding: 10px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    font-size: 1rem;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+/* ================= POPULAR PLAN ================= */
+
+.popular {
+    border: 4px double #2563eb;
+
+    background-color: #f8fbff;
+
+    position: relative;
+}
+
+/* Popular label */
+.popular-label {
+    display: inline-block;
+
+    padding: 6px 15px;
+
+    margin-bottom: 15px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .pricing-section > h1 {
+        font-size: 2.2rem;
+    }
+}

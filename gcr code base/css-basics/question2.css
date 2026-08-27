@@ -1,0 +1,202 @@
+/* Q2: Multi-section informational webpage */
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main body */
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background-color: #f1f5f9;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+
+    background-color: #172033;
+    color: white;
+
+    border-bottom: 5px solid #38bdf8;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* ================= COMMON SECTION ================= */
+
+section {
+    width: 100%;
+    min-height: 70vh;
+
+    padding: 100px 10%;
+    margin: 0;
+
+    border-bottom: 6px solid white;
+
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* ================= HISTORY ================= */
+/* Linear Gradient */
+
+.history {
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #93c5fd,
+        #e0f2fe
+    );
+}
+
+.history h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+/* ================= FAMOUS PLACES ================= */
+/* Radial Gradient */
+
+.places {
+    background: radial-gradient(
+        circle,
+        #fef3c7,
+        #fbbf24,
+        #d97706
+    );
+
+    /* Parallax-like fixed background */
+    background-attachment: fixed;
+}
+
+.places h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ================= CULTURE ================= */
+
+.culture {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.65),
+            rgba(15, 23, 42, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.culture h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* ================= FOOD ================= */
+
+.food {
+    background:
+        linear-gradient(
+            135deg,
+            #fee2e2,
+            #fecaca,
+            #fed7aa
+        );
+
+    /* Second fixed background section */
+    background-attachment: fixed;
+}
+
+.food h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+    color: white;
+
+    border-top: 5px solid #38bdf8;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}

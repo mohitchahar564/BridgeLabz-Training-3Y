@@ -1,0 +1,230 @@
+/* Q8: Dashboard Layout */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #172033;
+}
+
+/* ================= HEADER ================= */
+
+/* Fixed position header */
+.dashboard-header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    background-color: #172033;
+    color: white;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+    display: flex;
+
+    min-height: 100vh;
+
+    padding-top: 70px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 240px;
+
+    min-height: calc(100vh - 70px);
+
+    padding: 30px 20px;
+
+    background-color: #1e293b;
+    color: white;
+
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 25px;
+
+    font-size: 1.4rem;
+}
+
+/* Navigation */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.sidebar nav a {
+    padding: 12px 15px;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav a:hover {
+    background-color: #334155;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    flex: 1;
+
+    padding: 40px;
+}
+
+.main-content > h2 {
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Content boxes */
+.content-boxes {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+/* Individual boxes */
+.content-box {
+    flex: 1 1 300px;
+
+    min-height: 200px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+}
+
+.content-box h3 {
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+}
+
+.content-box .number {
+    font-size: 2.5rem;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+
+    color: #2563eb;
+}
+
+.content-box p:last-child {
+    line-height: 1.5;
+
+    color: #64748b;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Smaller screens: sidebar stacks above content */
+@media (max-width: 700px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .sidebar nav a {
+        flex: 1 1 120px;
+
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .main-content > h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 450px) {
+
+    .dashboard-header {
+        padding: 0 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .content-box {
+        flex-basis: 100%;
+    }
+}
