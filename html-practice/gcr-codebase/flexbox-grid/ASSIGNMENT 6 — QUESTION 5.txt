@@ -1,0 +1,104 @@
+ASSIGNMENT 6 — QUESTION 5
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="pricing">
+<div class="card">
+<h2>Basic</h2>
+<p class="price">n499/month</p>
+<p>5 Projects</p>
+<p>Email Support</p>
+</div>
+<div class="card featured">
+<h2>Pro</h2>
+<p class="price">n999/month</p>
+<p>20 Projects</p>
+<p>Priority Support</p>
+</div>
+<div class="card">
+<h2>Premium</h2>
+<p class="price">n1,499/month</p>
+<p>Unlimited Projects</p>
+<p>Premium Support</p>
+</div>
+</section>
+</body>
+</html>
+
+
+ASSIGNMENT 6 — QUESTION 5
+CSS CODE
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+}
+.pricing {
+width: 90%;
+max-width: 1100px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+.card {
+flex: 1;
+padding: 35px 25px;
+text-align: center;
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+animation: fadeIn 1s ease forwards;
+transition: transform 0.3s ease;
+}
+.card:hover {
+transform: translateY(-10px);
+}
+.featured {
+transform: scale(1.08);
+background: #dbeafe;
+}
+.featured:hover {
+transform: scale(1.08) translateY(-10px);
+}
+.price {
+font-size: 24px;
+font-weight: bold;
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+@media (max-width: 750px) {
+.pricing {
+flex-direction: column;
+padding: 30px 0;
+}
+.card,
+.featured {
+width: 100%;
+transform: none;
+}
+.featured:hover {
+transform: translateY(-10px);
+}

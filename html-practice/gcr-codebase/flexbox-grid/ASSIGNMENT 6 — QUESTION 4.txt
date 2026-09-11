@@ -1,0 +1,115 @@
+ASSIGNMENT 6 — QUESTION 4
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+<header>
+<h1>Dashboard</h1>
+</header>
+<aside>
+<h2>Menu</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Profile</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+</nav>
+</aside>
+<main>
+<div class="box box1">Overview</div>
+<div class="box">Sales</div>
+<div class="box">Users</div>
+<div class="box">Reports</div>
+</main>
+</div>
+</body>
+</html>
+
+
+ASSIGNMENT 6 — QUESTION 4
+CSS CODE
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.dashboard {
+min-height: 100vh;
+display: grid;
+grid-template-columns: 220px 1fr;
+grid-template-rows: auto 1fr;
+}
+header {
+grid-column: 1 / -1;
+padding: 20px;
+background: #222;
+color: white;
+text-align: center;
+}
+aside {
+padding: 25px;
+background: #eee;
+}
+aside nav {
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-top: 20px;
+}
+aside a {
+color: #222;
+text-decoration: none;
+}
+main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-auto-rows: minmax(150px, 1fr);
+gap: 20px;
+padding: 25px;
+}
+.box {
+display: flex;
+justify-content: center;
+align-items: center;
+background: #e8f0fe;
+border-radius: 10px;
+font-size: 22px;
+font-weight: bold;
+transition: 0.3s;
+}
+.box1 {
+grid-column: span 2;
+}
+.box:hover {
+transform: scale(1.04);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 700px) {
+.dashboard {
+grid-template-columns: 1fr;
+grid-template-rows: auto auto 1fr;
+}
+header {
+grid-column: 1;
+}
+aside {
+text-align: center;
+}
+aside nav {
+align-items: center;
+}
+main {
+grid-template-columns: 1fr;
+}
+.box1 {
+grid-column: span 1;
+}

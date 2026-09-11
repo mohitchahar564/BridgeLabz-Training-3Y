@@ -1,0 +1,89 @@
+ASSIGNMENT 6 — QUESTION 3
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Section Homepage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>My Homepage</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+<main>
+<div class="box">
+<h2>Services</h2>
+<p>We provide useful web development services.</p>
+</div>
+<div class="box">
+<h2>Projects</h2>
+<p>Explore our latest projects and work.</p>
+</div>
+<div class="box">
+<h2>Contact</h2>
+<p>Get in touch with us for more information.</p>
+</div>
+</main>
+<footer>
+<p>&copy; 2026 My Homepage</p>
+</footer>
+</body>
+</html>
+
+
+ASSIGNMENT 6 — QUESTION 3
+CSS CODE
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+font-family: Arial, sans-serif;
+}
+header {
+padding: 20px;
+background: #222;
+color: white;
+text-align: center;
+}
+nav {
+display: flex;
+justify-content: space-around;
+margin-top: 15px;
+}
+nav a {
+color: white;
+text-decoration: none;
+}
+main {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+padding: 40px;
+}
+.box {
+flex: 1;
+min-height: 180px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 25px;
+background: #e8f0fe;
+border-radius: 10px;
+transition: 0.3s;

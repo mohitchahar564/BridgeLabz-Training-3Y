@@ -1,0 +1,80 @@
+ASSIGNMENT 6 — QUESTION 8
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Photo Gallery</h1>
+<section class="gallery">
+<figure>
+<img src="https://picsum.photos/500/350?random=1" alt="Nature">
+<figcaption>Nature</figcaption>
+</figure>
+<figure>
+<img src="https://picsum.photos/500/350?random=2" alt="Mountain">
+<figcaption>Mountain</figcaption>
+</figure>
+<figure>
+<img src="https://picsum.photos/500/350?random=3" alt="City">
+<figcaption>City</figcaption>
+</figure>
+<figure>
+<img src="https://picsum.photos/500/350?random=4" alt="Forest">
+<figcaption>Forest</figcaption>
+</figure>
+<figure>
+<img src="https://picsum.photos/500/350?random=5" alt="Beach">
+<figcaption>Beach</figcaption>
+</figure>
+<figure>
+<img src="https://picsum.photos/500/350?random=6" alt="Landscape">
+<figcaption>Landscape</figcaption>
+</figure>
+</section>
+</body>
+</html>
+
+
+ASSIGNMENT 6 — QUESTION 8
+CSS CODE
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+padding: 30px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+max-width: 1200px;
+margin: 30px auto;
+}
+figure {
+margin: 0;
+overflow: hidden;
+border-radius: 10px;
+background: #f1f1f1;
+}
+figure img {
+width: 100%;
+height: 220px;
+display: block;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+figure:hover img {
+transform: scale(1.05);
+}
+figcaption {
+padding: 12px;
+font-weight: bold;
+}

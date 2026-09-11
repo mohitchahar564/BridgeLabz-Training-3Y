@@ -1,0 +1,128 @@
+ASSIGNMENT 6 — QUESTION 6
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blog">
+<header>
+<h1>My Blog</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+<aside>
+<h2>Categories</h2>
+<ul>
+<li>Technology</li>
+<li>Education</li>
+<li>Travel</li>
+<li>Programming</li>
+</ul>
+</aside>
+<main>
+<article>
+<h2>Learning Web Development</h2>
+<p>HTML and CSS are important technologies for creating modern websites.</p>
+</article>
+<article>
+<h2>Why Responsive Design Matters</h2>
+<p>Responsive design helps websites work well on phones, tablets and desktops.</p>
+</article>
+</main>
+<footer>
+<p>Contact: example@email.com | &copy; 2026 My Blog</p>
+</footer>
+</div>
+</body>
+</html>
+
+
+ASSIGNMENT 6 — QUESTION 6
+CSS CODE
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.blog {
+min-height: 100vh;
+display: grid;
+grid-template-columns: 220px 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas:
+"header header"
+"sidebar main"
+"footer footer";
+gap: 20px;
+padding: 20px;
+}
+header {
+grid-area: header;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background: #222;
+color: white;
+}
+header nav {
+display: flex;
+gap: 20px;
+}
+header a {
+color: white;
+text-decoration: none;
+}
+aside {
+grid-area: sidebar;
+padding: 20px;
+background: #eee;
+}
+aside ul {
+padding-left: 20px;
+line-height: 2;
+}
+main {
+grid-area: main;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+article {
+padding: 25px;
+background: #f1f5f9;
+border-radius: 10px;
+}
+footer {
+grid-area: footer;
+padding: 20px;
+text-align: center;
+background: #222;
+color: white;
+}
+@media (max-width: 800px) {
+.blog {
+grid-template-columns: 1fr;
+grid-template-areas:
+"header"
+"main"
+"sidebar"
+"footer";
+}
+main {
+grid-template-columns: 1fr;
+}
+header {
+flex-direction: column;
+gap: 15px;
+}
