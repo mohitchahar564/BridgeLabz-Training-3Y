@@ -1,0 +1,22 @@
+ASSIGNMENT 7 — Q10: Navigation Bar with Transitions
+HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Navigation Bar</title><link rel="stylesheet" href="style.css"></head>
+<body><header><nav>
+<a href="#" class="active">Home</a><a href="#">About</a><a href="#">Services</a><a href="#">Projects</a><a href="#">Contact</a>
+</nav></header><main><h1>Responsive Navigation</h1><p>Resize the page below 700px to stack the links vertically.</p></main>
+<footer>Simple centered footer text</footer></body></html>
+
+
+CSS Code
+/* Responsive navbar with smooth transitions */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+nav { display: flex; justify-content: center; background: #1e293b; }
+nav a { color: white; text-decoration: none; padding: 18px 24px; border: 1px solid #475569; transition: all 0.3s ease; }
+nav a:hover { background: #2563eb; transform: translateY(-2px); }
+nav a.active { background: #0f766e; border-bottom: 4px solid #facc15; }
+main { flex: 1; text-align: center; padding: 60px 20px; }
+footer { text-align: center; padding: 18px; background: #e2e8f0; }
+@media (max-width: 700px) { nav { flex-direction: column; } nav a { text-align: center; } }

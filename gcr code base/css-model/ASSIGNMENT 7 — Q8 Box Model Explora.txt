@@ -1,0 +1,24 @@
+ASSIGNMENT 7 — Q8: Box Model Exploration
+HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Box Model</title><link rel="stylesheet" href="style.css"></head>
+<body><main><h1>CSS Box Model</h1>
+<section class="demo"><div class="margin"><div class="border"><div class="padding"><div class="content">CONTENT</div></div></div></div></section>
+<p>Content → Padding → Border → Margin</p>
+<section class="compare"><div class="default">Default box sizing</div><div class="borderbox">border-box sizing</div></section>
+</main></body></html>
+
+
+CSS Code
+/* Box model layers are visually separated */
+body { margin: 0; font-family: Arial, sans-serif; text-align: center; background: #f8fafc; }
+main { padding: 30px; }
+.demo { display: inline-block; margin: 25px; background: #fde68a; outline: 3px dashed #ca8a04; }
+.margin { padding: 28px; background: #fef3c7; }
+.border { padding: 18px; border: 10px solid #2563eb; background: #dbeafe; }
+.padding { padding: 22px; background: #bbf7d0; }
+.content { width: 150px; padding: 20px; background: #ffffff; font-weight: bold; }
+.compare { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+.default, .borderbox { width: 220px; height: 110px; padding: 25px; border: 8px solid #7c3aed; background: #ede9fe; }
+.borderbox { box-sizing: border-box; border-color: #059669; background: #d1fae5; }

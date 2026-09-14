@@ -1,0 +1,22 @@
+ASSIGNMENT 7 — Q2: Height and Width Practice Layout
+HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Height & Width</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="layout">
+<section class="box one">180px × 220px</section>
+<section class="box two">35vh height / 30%</section>
+<section class="box three">12em height / max-width</section>
+</main></body></html>
+
+CSS Code
+/* Different sizing units and overflow */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { font-family: Arial, sans-serif; background: #eef2ff; }
+.layout { min-height: 100vh; display: flex; justify-content: center; align-items: center; gap: 24px; padding: 30px; }
+.box { display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 14px; color: white; overflow: auto; }
+.one { width: 220px; height: 180px; background: #2563eb; }
+.two { width: 30%; height: 35vh; min-height: 140px; background: #059669; }
+.three { width: 32%; height: 12em; max-width: 300px; background: #db2777; }
+@media (max-width: 700px) { .layout { flex-wrap: wrap; } }

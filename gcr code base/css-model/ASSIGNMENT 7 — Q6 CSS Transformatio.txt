@@ -1,0 +1,23 @@
+ASSIGNMENT 7 — Q6: CSS Transformations Showcase
+HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Transforms</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="showcase">
+<div><div class="box rotate">Rotate</div><p>rotate()</p></div>
+<div><div class="box scale">Scale</div><p>scale()</p></div>
+<div><div class="box translate">Move</div><p>translate()</p></div>
+<div><div class="box skew">Skew</div><p>skew()</p></div>
+</main></body></html>
+
+
+CSS Code
+/* Transformations activate on hover */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background: #f8fafc; }
+.showcase { display: flex; gap: 35px; justify-content: center; text-align: center; flex-wrap: wrap; }
+.box { width: 130px; height: 110px; display: flex; align-items: center; justify-content: center; color: white; background: #2563eb; border-radius: 14px; transition:
+.rotate:hover { transform: rotate(12deg); }
+.scale:hover { transform: scale(1.18); }
+.translate:hover { transform: translate(15px, -15px); }
+.skew:hover { transform: skew(12deg, 5deg); }
