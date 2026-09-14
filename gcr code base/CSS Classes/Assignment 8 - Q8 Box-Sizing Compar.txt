@@ -1,0 +1,23 @@
+Assignment 8 - Q8: Box-Sizing Comparison
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Box Sizing</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>Box-Sizing Comparison</h1></header><main class="comparison">
+<section class="box content-box"><h2>content-box</h2><p>Width applies to content. Padding and border are
+added to total size.</p></section>
+<section class="box border-box"><h2>border-box</h2><p>Width includes content, padding and
+border.</p></section></main><footer>Same declared width and padding, different
+sizing.</footer></body></html>
+
+CSS CODE
+/* Default sizing is content-box */
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-
+family:Arial;background:#f8fafc;box-sizing:border-box}
+header,footer{text-align:center;padding:16px;background:#334155;color:white}
+.comparison{flex:1;display:flex;justify-content:center;align-items:center;gap:30px;padding:30px}
+.box{width:320px;padding:30px;border:10px solid;border-radius:12px;min-height:200px}
+.content-box{box-sizing:content-box;background:#fee2e2;border-color:#ef4444}
+.border-box{box-sizing:border-box;background:#dbeafe;border-color:#3b82f6}
+@media(max-width:750px){.comparison{flex-direction:column}.box{width:min(90%,320px)}}

@@ -1,0 +1,24 @@
+Assignment 8 - Q9: Combined Effects Demonstration
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Combined Effects</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>Combined CSS Effects</h1></header><main class="effects">
+<button>Hover Me</button><button>Click Me</button><a href="#">Hover Link</a><div class="card">Hover
+Card</div>
+</main><footer>Pseudo-classes + transitions + transformations</footer></body></html>
+
+
+CSS CODE
+*{box-sizing:border-box} body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-
+family:Arial;background:#f1f5f9}
+header,footer{text-
+align:center;padding:16px;background:#1e293b;color:white}.effects{flex:1;display:flex;justify-
+content:space-evenly;align-items:center;gap:18px;padding:25px;flex-wrap:wrap}
+.effects button,.effects a,.card{padding:16px 24px;border-radius:9px;border:2px solid
+#2563eb;background:white;color:#2563eb;text-decoration:none;font-weight:bold;box-shadow:0 3px 9px
+#0002;transition:.3s ease-in-out}
+.effects button:hover,.effects
+a:hover,.card:hover{background:#2563eb;color:white;transform:scale(1.08);box-shadow:0 7px 16px
+#0003}.effects button:active{transform:scale(.96)}

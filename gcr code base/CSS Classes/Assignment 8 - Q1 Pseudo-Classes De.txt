@@ -1,0 +1,28 @@
+Assignment 8 - Q1: Pseudo-Classes Demonstration
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pseudo-Classes</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Pseudo-Classes Demonstration</h1></header>
+<main class="examples">
+<section><a href="#">Hover Link</a><p><b>:hover</b> changes an element on mouse hover.</p></section>
+<section><button>Focus Button</button><p><b>:focus</b> highlights the focused element.</p></section>
+<section><button>Press Button</button><p><b>:active</b> applies while pressing an element.</p></section>
+<section><ul><li>First</li><li>Second</li><li>Third</li></ul><p><b>:nth-child()</b> selects by
+position.</p></section>
+</main><footer>CSS Pseudo-Classes Practice</footer>
+</body></html>
+
+
+CSS CODE
+*{box-sizing:border-box} body{margin:0;font-family:Arial;background:#f4f7fb;color:#222}
+header,footer{text-align:center;padding:14px;background:#243b53;color:white}
+.examples{display:flex;gap:15px;padding:28px 18px;justify-content:center}
+.examples section{flex:1;text-align:center;background:white;padding:18px;border-radius:10px;box-shadow:0
+3px 10px #0002}
+a{color:#1769aa;font-weight:bold;transition:.3s} a:hover{color:#d6336c;background:#ffe3ec}
+button{padding:10px 18px;border:0;border-radius:7px;background:#1769aa;color:white}
+button:focus{outline:3px solid #ffb703} button:active{transform:scale(.95);background:#d6336c}
+li{list-style:none;padding:7px;background:#e8eef5;margin:4px;border-radius:5px} li:nth-

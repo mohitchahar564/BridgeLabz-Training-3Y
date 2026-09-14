@@ -1,0 +1,23 @@
+Assignment 8 - Q7: User Interface Components
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>UI Components</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>Simple User Interface</h1></header><main class="card"><form>
+<label for="search">Search</label><input id="search" type="search" placeholder="Search here...">
+<div class="actions"><button>Search</button><button type="button">Cancel</button></div>
+<label for="category">Category</label><select id="category"><option>Select
+category</option><option>HTML</option><option>CSS</option><option>Design</option></select>
+</form></main></body></html>
+
+
+CSS CODE
+*{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Arial;background:linear-
+gradient(135deg,#dbeafe,#ede9fe);display:flex;flex-direction:column}
+header{text-align:center;padding:18px;color:#172554}.card{width:min(90%,500px);margin:auto;padding:30px;b
+ackground:white;border-radius:16px;box-shadow:0 8px 25px #0002}
+form{display:flex;flex-direction:column;gap:10px} input,select,button{padding:12px;border-
+radius:8px;border:1px solid #cbd5e1;font-size:15px}
+input:focus,select:focus{outline:3px solid #bfdbfe;border-color:#2563eb}.actions{display:flex;gap:10px}
+button{background:#2563eb;color:white;border:0;cursor:pointer;transition:.3s}

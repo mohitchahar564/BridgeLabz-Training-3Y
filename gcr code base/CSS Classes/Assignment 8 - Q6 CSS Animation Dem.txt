@@ -1,0 +1,24 @@
+Assignment 8 - Q6: CSS Animation Demonstration
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Animations</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>CSS Animation Demonstration</h1></header>
+<main class="animations"><div class="box">Moving Box</div><div class="ball"></div><h2 class="text">Color
+Changing Text</h2></main></body></html>
+
+
+CSS CODE
+*{box-sizing:border-box} body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-
+family:Arial;background:#f1f5f9}
+header{text-
+align:center;padding:16px;background:#0f172a;color:white}.animations{flex:1;display:flex;justify-
+content:center;align-items:center;gap:60px;flex-wrap:wrap;overflow:hidden}
+.box{padding:22px;background:#2563eb;color:white;animation:move 3s ease-in-out infinite alternate}
+.ball{width:55px;height:55px;border-radius:50%;background:#f97316;animation:bounce 1.5s ease-in-out
+infinite;animation-delay:.3s}
+.text{animation:change 3s ease-in-out infinite alternate}
+@keyframes move{from{transform:translateX(-70px)}to{transform:translateX(70px)}} @keyframes
+bounce{0%,100%{transform:translateY(-60px)}50%{transform:translateY(60px)}}
+@keyframes change{0%{opacity:.4;transform:scale(1)}100%{opacity:1;transform:scale(1.2)}}

@@ -1,0 +1,33 @@
+Assignment 8 - Q3: Image Showcase Layout
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Image Showcase</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>Image Showcase</h1></header>
+<main class="gallery">
+<figure><div><img src="https://picsum.photos/id/1015/400/260"
+alt="Mountain"></div><figcaption>Mountain</figcaption></figure>
+<figure><div><img src="https://picsum.photos/id/1016/400/260"
+alt="Forest"></div><figcaption>Forest</figcaption></figure>
+<figure><div><img src="https://picsum.photos/id/1025/400/260"
+alt="Dog"></div><figcaption>Dog</figcaption></figure>
+<figure><div><img src="https://picsum.photos/id/1035/400/260"
+alt="River"></div><figcaption>River</figcaption></figure>
+<figure><div><img src="https://picsum.photos/id/1043/400/260"
+alt="Nature"></div><figcaption>Nature</figcaption></figure>
+<figure><div><img src="https://picsum.photos/id/1069/400/260"
+alt="Building"></div><figcaption>Architecture</figcaption></figure>
+</main></body></html>
+
+CSS CODE
+*{box-sizing:border-box} body{margin:0;font-family:Arial;background:#f5f5f5} header{text-
+align:center;padding:16px;background:#1f2937;color:white}
+.gallery{max-width:950px;margin:25px auto;padding:12px;display:grid;grid-template-
+columns:repeat(3,1fr);gap:18px}
+figure{margin:0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 4px 12px #0002}
+figure>div{position:relative;overflow:hidden} img{width:100%;display:block;transition:transform .3s}
+figure>div:after{content:"";position:absolute;inset:0;background:#0008;opacity:0;transition:opacity .3s}
+figure:hover img{transform:scale(1.1)} figure:hover>div:after{opacity:1} figcaption{text-
+align:center;padding:10px;font-weight:bold}
+@media(max-width:700px){.gallery{grid-template-columns:1fr}}
